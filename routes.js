@@ -36,7 +36,7 @@ const requestHandler = (req, res) => {
     res.end()
 }
 
-module.exports = requestHandler
+// module.exports = requestHandler
 
 // module.exports = {
 //     handler: requestHandler,
@@ -47,7 +47,7 @@ module.exports = requestHandler
 // module.exports.someText = 'Some text'
 
 exports.handler = requestHandler
-exports.someText = 'Some text'
+exports.someText = 'Some text lol'
 
 // exports = requestHandler
 
