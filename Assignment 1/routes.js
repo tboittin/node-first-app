@@ -27,7 +27,7 @@ const requestHandler = (req, res) => {
     }
     if (url === "/create-user" && method === "POST") {
         req.on("data", user => {
-            console.log(user.toString())
+            console.log(user.toString().split('=')[1])
         })
         return req.on("end", () => {
             res.statusCode = 302
